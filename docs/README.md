@@ -67,8 +67,8 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 <p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 3 is the virtual environment we created.</p>
 
 <figure>
-<img src="../code/Related_images/GUI_new.png" width="500" height="400">
-<figcaption>figure 1</figcaption>
+<img src="../code/Related_images/GUI_new.png" width="900" height="400">
+<figcaption>figure 3</figcaption>
 </figure>
 
 ## Experiment Setup and Implementation
