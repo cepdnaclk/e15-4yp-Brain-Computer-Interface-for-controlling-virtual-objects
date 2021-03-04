@@ -3,7 +3,7 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-4yp-Brain-Computer-Interface-for-controlling-virtual-objects
+repository-name:eYY-4yp-Brain-Computer-Interface-for-controlling-virtual-objects
 title:
 ---
 
