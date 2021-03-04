@@ -56,6 +56,8 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 ## Experiment Setup and Implementation
 
 ## Results and Analysis
+<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig. 8.
+
 
 ## Conclusion
 <p>Filters that were used in EEG signal processing causes a phase shift that makes the usage of wavelet features impossible. Therefore we have used the FFT feature extraction method to provide frequency bins as features for our classification methods. But by substituting those filters (Butterworth filter) with others (zero phase filters) the effect of the phase shift can be removed. We can explore the possibility of using a combination of features provided by WT and FFT to train a more accurate classification model. With all the classification models that were trained KNN algorithm with FFT algorithm would be the ideal choice of features and classification combination. We were able to obtain around 55% TPR value. By implementing statistical analysis we can rectify the anatomical localization effects on EEG data would further increase accuracy of these models. Deep learning methods proved to have a lot of potential when it comes to MI based research in recent history. Possibility of using deep learning approaches in non motor imagery
