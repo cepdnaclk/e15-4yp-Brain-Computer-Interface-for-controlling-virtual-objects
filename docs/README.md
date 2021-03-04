@@ -37,15 +37,18 @@ title: Brain Computer Interface for controlling virtual objects
 ---
 
 ## Abstract
+
 <p>Non-invasive EEG based Brain Computer Interface (BCI) systems have been an interesting research area for many fields. However most of the research done on this subject is synchronous, therefore the state of mind of the user is not similar to its natural behaviour. Considering to provide possible experience in practical applications, self-paced BCI systems started gaining popularity in recent years. However, there are certain challenges yet to be addressed when following this method. Out of the research done on self-paced BCI systems most of them are focused on motor-imagery control whereas research on nonmotor imagery mental tasks is limited. In this research, we analyse the possibility of using the techniques used in the motorimagery method for non-motor imagery mental tasks to be fed into virtual object controlling applications.</p>
 
 ## Related works
+
 <p>Both non-motor imagery EEG signals related to virtual object manipulation and motor imagery EEG signals are sensorimotor rhythms(SMR). These are specific brain waves over the sensorimotor cortex that are generated after MI or ME. In research by Faradji et.al [a link](https://cdn.intechopen.com/pdfs/65241.pdf), they explored the idea of rotation of a virtual object in 3D space in a more natural way. They used auto scalar auto-regressive methods for feature extraction and the classification was done with quadratic discriminant analysis. They obtained a true positive rate (TPR) value of 54.6% TPR and 0.01% FPR. Although there are numerous researches on using motor imagery to control virtual objects that give us higher accuracy [2], research done by Faradji et al. explores the possibility of controlling objects in a more natural way. It was stated that although the TPR is relatively low compared to MI related research, this method is more preferable in real-time applications since this method requires less computational power.
   
 ## Methodology
+
 <p>First we trained the subject to train three mind intents which are left, right, and None without any visual aid. Afterwards,
 we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture EEG data in the experimental setup and signals were processed using Python. The number of EEG channels used was 8. EEG signals were fed for processing and denoising. We used the OpenBCI GUI to send EEG signals
-through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. 
+through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
   
 <figure>
 <img src="../code/Related_images/steps.jpg" width="500" height="400">
@@ -63,9 +66,10 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 <h5>B.Virtual Environment</h5>
 <p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 3 is the virtual environment we created.</p>
 
-![picture alt](../code/Related_images/GUI_new.png)
-
-<p>figure 3</p>
+<figure>
+<img src="../code/Related_images/GUI_new.png" width="500" height="400">
+<figcaption>figure 1</figcaption>
+</figure>
 
 ## Experiment Setup and Implementation
 
