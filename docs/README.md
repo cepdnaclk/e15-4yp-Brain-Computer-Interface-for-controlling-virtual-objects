@@ -3,7 +3,7 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-4yp-project-template
+repository-name: eYY-4yp-Brain-Computer-Interface-for-controlling-virtual-objects
 title:
 ---
 
@@ -13,14 +13,15 @@ title:
 
 #### Team
 
-- eNumber, Name, [email](mailto:name@email.com)
-- eNumber, Name, [email](mailto:name@email.com)
-- eNumber, Name, [email](mailto:name@email.com)
+- E/15/023, Avishka Athapattu, [email](mailto:e15023@eng.pdn.ac.lk)
+- E/15/059, Prageeth Dassanayake, [email](mailto:e15059@eng.pdn.ac.lk)
+- E/15/238, Sewwandie Nanayakkara, [email](mailto:sewwandiecn@gmail.com)
 
 #### Supervisors
 
-- Name, [email](mailto:name@eng.pdn.ac.lk)
-- Name, [email](mailto:name@eng.pdn.ac.lk)
+- Dr. Isuru Nawinne, [email](mailto:isurunawinne@eng.pdn.ac.lk)
+- Prof. Roshan Ragel, [email](mailto:roshanr@eng.pdn.ac.lk)
+- Theekshana Dissanayake, [email](mailto:theekshanadis@gmail.com)
 
 #### Table of content
 
