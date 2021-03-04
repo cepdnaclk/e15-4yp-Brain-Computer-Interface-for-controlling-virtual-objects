@@ -10,17 +10,17 @@
          "researchgate_profile":"#"
       },
       {
-         "name":"Team Member Name 2",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
+         "name":"Prageeth Dassanayake",
+         "email":"e15059@eng.pdn.ac.lk",
+         "eNumber":"E/15/059",
          "github_profile":"#",
          "linkedin_profile":"#",
          "researchgate_profile":"#"
       },
       {
-         "name":"Team Member Name 3",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
+         "name":"Sewwandie Nanayakkara",
+         "email":"sewwandiecn@gmail.com",
+         "eNumber":"E/15/238",
          "github_profile":"#",
          "linkedin_profile":"#",
          "researchgate_profile":"#"
@@ -28,14 +28,20 @@
    ],
    "supervisors":[
       {
-         "name":"Dr. Supervisor 1",
-         "email":"email@eng.pdn.ac.lk",
+         "name":"Dr. Isuru Nawinne",
+         "email":"isurunawinne@eng.pdn.ac.lk",
          "linkedin_profile":"",
          "researchgate_profile":""
       },
       {
-         "name":"Dr. Supervisor 2",
-         "email":"email@eng.pdn.ac.lk",
+         "name":"Prof. Roshan Ragel",
+         "email":"roshanr@eng.pdn.ac.lk",
+         "linkedin_profile":"",
+         "researchgate_profile":""
+      }
+      {
+         "name":"Theekshana Dissanayake",
+         "email":"theekshanadis@gmail.com",
          "linkedin_profile":"",
          "researchgate_profile":""
       }
