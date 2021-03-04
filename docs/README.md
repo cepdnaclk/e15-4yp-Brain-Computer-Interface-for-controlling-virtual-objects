@@ -3,8 +3,8 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name:e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects
-title:
+repository-name: e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects
+title: Brain Computer Interface for controlling virtual objects
 ---
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
