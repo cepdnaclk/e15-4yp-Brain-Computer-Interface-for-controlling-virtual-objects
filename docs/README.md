@@ -70,9 +70,7 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture EEG data in the experimental setup and signals were processed using Python. EEG signals were fed for processing and denoising. We used the OpenBCI GUI to send EEG signals
 through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
 
-<h3>A. Hardware platform</h3>
-
-<h4>Cyton Board</h4>
+<h4>A. Cyton Board (Hardware platform)</h4>
 
 <p>Cyton board is an Arduino compatible wireless device which is able to capture EEG signals. It consists of 8 biopotential input channels. It must be powered up with 3-6V DC battery only. It has the ability to send samples at 250Hz frequency. Each packet contains a header followed by a sample counter, followed by 8 ADS channel data, followed by the three axes values of the accelerometer, followed by a footer. The USB dongle is connected to the laptop where the cyton board communicates with it using Bluetooth to transfer data.</p>
 
@@ -81,7 +79,7 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 
 <h4>B. OpenBCI GUI and LSL</h4> 
 
-OpenBCI GUI (fig 4) is a powerful software that is used to visualize, record and stream data from OpenBCI boards. This GUI helps to visualize data coming from eight channels of Cyton board to understand if there are any faults in connections. If there are external disturbances that  interfere with the visualization of EEG signals it can be recognized as well. It also visualizes the real-time representations of FFT, power spectral distribution and time series.
+OpenBCI GUI (fig 4)<a href="https://openbci.com/index.php/downloads">here</a> is a powerful software that is used to visualize, record and stream data from OpenBCI boards. This GUI helps to visualize data coming from eight channels of Cyton board to understand if there are any faults in connections. If there are external disturbances that  interfere with the visualization of EEG signals it can be recognized as well. It also visualizes the real-time representations of FFT, power spectral distribution and time series.
 
 <img src="images/lsl_settings.png" width="600" height="300">
 <p>Figure 4</p>
