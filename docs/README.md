@@ -46,7 +46,7 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
   
 ## Methodology
 
-<h3>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</h3>
+<p>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</p>
 
 1. The subject should know what are the activities that need to be done since it is important to induce brain waves related to those activities. Most of the research subjects practice to perform a minimum number of activities, for example in virtual object controlling, moving an object up and down, left and right.
 2. Subjects should train without feedback provided to acquire the required data as well as to analyze signal patterns Fig 1. 
@@ -70,14 +70,14 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture EEG data in the experimental setup and signals were processed using Python. EEG signals were fed for processing and denoising. We used the OpenBCI GUI to send EEG signals
 through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
 
-<h4>A. Cyton Board (Hardware platform)</h4>
+<h5>A. Cyton Board (Hardware platform)</h5>
 
 <p>Cyton board is an Arduino compatible wireless device which is able to capture EEG signals. It consists of 8 biopotential input channels. It must be powered up with 3-6V DC battery only. It has the ability to send samples at 250Hz frequency. Each packet contains a header followed by a sample counter, followed by 8 ADS channel data, followed by the three axes values of the accelerometer, followed by a footer. The USB dongle is connected to the laptop where the cyton board communicates with it using Bluetooth to transfer data.</p>
 
 <img src="images/cyton.jpg" width="600" height="300">
 <p>Figure 3</p>
 
-<h4>B. OpenBCI GUI and LSL</h4> 
+<h5>B. OpenBCI GUI and LSL</h5> 
 
 OpenBCI GUI (fig 4)<a href="https://openbci.com/index.php/downloads">here</a> is a powerful software that is used to visualize, record and stream data from OpenBCI boards. This GUI helps to visualize data coming from eight channels of Cyton board to understand if there are any faults in connections. If there are external disturbances that  interfere with the visualization of EEG signals it can be recognized as well. It also visualizes the real-time representations of FFT, power spectral distribution and time series.
 
@@ -86,14 +86,14 @@ OpenBCI GUI (fig 4)<a href="https://openbci.com/index.php/downloads">here</a> is
 
 Lab Streaming Layer is a system developed for synchronising streaming data for real-time analysis and recording. This is used to send the raw EEG data as time series into a python application for signal processing. PyLSL library is used to input the data to the python application. We are taking in time series EEG data. Data is transferred at 250Hz. Each sample contains data of each channel as floats.
 
-<h4>C. Electrodes and electrode placement</h4>
+<h5>C. Electrodes and electrode placement</h5>
 
 <p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 5.</p>
 
 <img src="images/ten_20.jpg" width="500" height="400">
 <p>Figure 5</p>
 
-<h4>D. Virtual Environment</h4>
+<h5>D. Virtual Environment</h5>
 <p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 6 is the virtual environment we created.</p>
 
 <img src="images/ve.png" width="900" height="400">
