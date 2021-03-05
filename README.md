@@ -8,3 +8,5 @@ are focused on motor-imagery control whereas research on nonmotor imagery mental
 methods, and wavelet transformation with threshold. Feature extraction was done using signals representations such as fast
 Fourier transformation, wavelet transformation and statistical representation of EEG data. Their ability to perform in realtime manner and their information resolution were obtained using different methods. For classification we used Random Forest, Quadratic Discriminant Analysis (QDA), KNearest Neighbour Algorithm (KNN), Support Vector Machine (SVM)
 and CatBoost. According to the results obtained in this research, we present a comparison between the results of different approaches that were tested out.</p>
+
+<a href="url">Project website</a>
