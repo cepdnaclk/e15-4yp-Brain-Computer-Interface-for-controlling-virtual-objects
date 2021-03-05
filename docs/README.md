@@ -75,9 +75,10 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 
 <img src="images/tables.png" alt="Accuracy tables" width=300 >
 
+<div>
 <img src="images/knn_cm.png" alt="KNN confusion matrix" width=300>
-
 <p>figure 4</p>
+<div>
 
 ## Conclusion
 
