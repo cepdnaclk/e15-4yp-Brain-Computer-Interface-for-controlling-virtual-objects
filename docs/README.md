@@ -46,9 +46,6 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
   
 ## Methodology
 
-<img src="images/steps.jpg" width="500" height="400">
-<p> Figure 1</p>
-
 <p>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</p>
 
 1. The subject should know what are the activities that need to be done since it is important to induce brain waves related to those activities. Most of the research subjects practice to perform a minimum number of activities, for example in virtual object controlling, moving an object up and down, left and right.
@@ -59,6 +56,9 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 6. Training in real-time with the help of visual feedback Fig.2.
 7. Update the classifier if the frequency band or EEG pattern changes. (Post-processing)
 8. Feed the classification output into an application interface with virtual objects.
+
+<img src="images/steps.jpg" width="500" height="400">
+<p> Figure 1</p>
 
 <img src="images/sync_steps.jpg" width="400" height="400">
 <p>Figure 2</p>
@@ -71,13 +71,16 @@ we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture E
 through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
 
 <h3>Hardware platform</h3>
+
 <h4>Cyton Board</h4>
+
 <p>Cyton board is an Arduino compatible wireless device which is able to capture EEG signals. It consists of 8 biopotential input channels. It must be powered up with 3-6V DC battery only. It has the ability to send samples at 250Hz frequency. Each packet contains a header followed by a sample counter, followed by 8 ADS channel data, followed by the three axes values of the accelerometer, followed by a footer. The USB dongle is connected to the laptop where the cyton board communicates with it using Bluetooth to transfer data.</p>
 
 <img src="images/cyton.jpg" width="600" height="300">
 <p>Figure 3</p>
 
 <h4>A. Electrodes and electrode placement</h4>
+
 <p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 2.</p>
 
 <img src="images/ten_20.jpg" width="500" height="400">
@@ -91,7 +94,7 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 
 ## Results and Analysis
 
-<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig. 5.</p>
+<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig.6.</p>
 
 <img src="images/tables.png" alt="Accuracy tables" width=300 >
 
