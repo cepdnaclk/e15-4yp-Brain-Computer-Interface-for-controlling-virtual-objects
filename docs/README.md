@@ -51,7 +51,7 @@ we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture E
 through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
   
 <figure>
-<img src="../code/Related_images/steps.jpg" width="500" height="400">
+<img src="https://github.com/cepdnaclk/e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects/blob/main/code/Related_images/steps.jpg" width="500" height="400">
 <figcaption>figure 1</figcaption>
 </figure>
   
