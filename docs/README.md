@@ -50,10 +50,9 @@ title: Brain Computer Interface for controlling virtual objects
 we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture EEG data in the experimental setup and signals were processed using Python. The number of EEG channels used was 8. EEG signals were fed for processing and denoising. We used the OpenBCI GUI to send EEG signals
 through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
   
-<figure>
+<p>
 <img src="https://github.com/cepdnaclk/e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects/blob/main/code/Related_images/steps.jpg" width="500" height="400">
-<figcaption>figure 1</figcaption>
-</figure>
+</p>
   
 <h5>A. Electrodes and electrode placement</h5>
 <p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 2.</p>
