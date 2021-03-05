@@ -54,14 +54,14 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 <p> Figure 1</p>
 
   
-<h5>A. Electrodes and electrode placement</h5>
+<h4>A. Electrodes and electrode placement</h4>
 <p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 2.</p>
 
 
 <img src="images/ten_20.jpg" width="500" height="400">
 <p>Figure 2<p>
 
-<h5>B.Virtual Environment</h5>
+<h4>B.Virtual Environment</h4>
 <p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 3 is the virtual environment we created.</p>
 
 <img src="images/ve.png" width="900" height="400">
