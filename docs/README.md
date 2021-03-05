@@ -46,7 +46,7 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
   
 ## Methodology
 
-<p>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</p>
+<h3>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</h3>
 
 1. The subject should know what are the activities that need to be done since it is important to induce brain waves related to those activities. Most of the research subjects practice to perform a minimum number of activities, for example in virtual object controlling, moving an object up and down, left and right.
 2. Subjects should train without feedback provided to acquire the required data as well as to analyze signal patterns Fig 1. 
@@ -79,28 +79,37 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 <img src="images/cyton.jpg" width="600" height="300">
 <p>Figure 3</p>
 
-<h4>A. Electrodes and electrode placement</h4>
+<h4>OpenBCI GUI and LSL</h4> 
 
-<p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 2.</p>
+OpenBCI GUI (fig 4) is a powerful software that is used to visualize, record and stream data from OpenBCI boards. This GUI helps to visualize data coming from eight channels of Cyton board to understand if there are any faults in connections. If there are external disturbances that  interfere with the visualization of EEG signals it can be recognized as well. It also visualizes the real-time representations of FFT, power spectral distribution and time series.
 
-<img src="images/ten_20.jpg" width="500" height="400">
+<img src="images/lsl_settings.png" width="600" height="300">
 <p>Figure 4</p>
 
+Lab Streaming Layer is a system developed for synchronising streaming data for real-time analysis and recording. This is used to send the raw EEG data as time series into a python application for signal processing. PyLSL library is used to input the data to the python application. We are taking in time series EEG data. Data is transferred at 250Hz. Each sample contains data of each channel as floats.
+
+<h4>A. Electrodes and electrode placement</h4>
+
+<p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 5.</p>
+
+<img src="images/ten_20.jpg" width="500" height="400">
+<p>Figure 5</p>
+
 <h4>B.Virtual Environment</h4>
-<p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 3 is the virtual environment we created.</p>
+<p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 6 is the virtual environment we created.</p>
 
 <img src="images/ve.png" width="900" height="400">
-<p>Figure 5</p>
+<p>Figure 6</p>
 
 ## Results and Analysis
 
-<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig.6.</p>
+<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig.7.</p>
 
 <img src="images/tables.png" alt="Accuracy tables" width=300 >
 
 <div>
 <img src="images/knn_cm.png" alt="KNN confusion matrix" width=300>
-<p>figure 6</p>
+<p>figure 7</p>
 <div>
 
 ## Conclusion
