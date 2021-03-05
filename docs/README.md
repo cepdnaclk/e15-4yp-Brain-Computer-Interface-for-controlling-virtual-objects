@@ -50,6 +50,8 @@ title: Brain Computer Interface for controlling virtual objects
 we trained the subject with GUI aid. We used an OpenBCI Cyton board to capture EEG data in the experimental setup and signals were processed using Python. The number of EEG channels used was 8. EEG signals were fed for processing and denoising. We used the OpenBCI GUI to send EEG signals
 through LSL (Lab Streaming Layer) into a Python application where we extracted the features. Our subject was a male volunteer, of age 24. Initially the subject performed a mental task while watching a virtual object on a screen. This training was done in a limited time trial like 0 -10 seconds, because the performance of the mental task degrades over time. </p>
   
+
+ ![](https://github.com/cepdnaclk/e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects/blob/main/code/Related_images/steps.jpg)
 <p>
 <img src="https://github.com/cepdnaclk/e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects/blob/main/code/Related_images/steps.jpg" width="500" height="400">
 </p>
