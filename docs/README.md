@@ -42,7 +42,7 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 
 ## Related works
 
-<p>Both non-motor imagery EEG signals related to virtual object manipulation and motor imagery EEG signals are sensorimotor rhythms(SMR). These are specific brain waves over the sensorimotor cortex that are generated after MI or ME. In research by Faradji et.al [a link](https://cdn.intechopen.com/pdfs/65241.pdf), they explored the idea of rotation of a virtual object in 3D space in a more natural way. They used auto scalar auto-regressive methods for feature extraction and the classification was done with quadratic discriminant analysis. They obtained a true positive rate (TPR) value of 54.6% TPR and 0.01% FPR. Although there are numerous researches on using motor imagery to control virtual objects that give us higher accuracy [2], research done by Faradji et al. explores the possibility of controlling objects in a more natural way. It was stated that although the TPR is relatively low compared to MI related research, this method is more preferable in real-time applications since this method requires less computational power.</p>
+<p>Both non-motor imagery EEG signals related to virtual object manipulation and motor imagery EEG signals are sensorimotor rhythms(SMR). These are specific brain waves over the sensorimotor cortex that are generated after MI or ME. In research by Faradji et.al <a href="https://cdn.intechopen.com/pdfs/65241.pdf">research paper</a>, they explored the idea of rotation of a virtual object in 3D space in a more natural way. They used auto scalar auto-regressive methods for feature extraction and the classification was done with quadratic discriminant analysis. They obtained a true positive rate (TPR) value of 54.6% TPR and 0.01% FPR. Although there are numerous researches on using motor imagery to control virtual objects that give us higher accuracy [2], research done by Faradji et al. explores the possibility of controlling objects in a more natural way. It was stated that although the TPR is relatively low compared to MI related research, this method is more preferable in real-time applications since this method requires less computational power.</p>
   
 ## Methodology
 
@@ -57,9 +57,8 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 <h4>A. Electrodes and electrode placement</h4>
 <p>We used eight Golden cup electrodes to sample EEG data. We placed those on the subject according to the 10-20 method. The 10–20 system or International 10–20 system is an internationally recognized method to describe and apply the location of scalp electrodes in the context of an EEG exam. EEGs were placed in 10% and 20% spaces on the scalp as follows. The brain waves related to controlling virtual objects are induced in the motor cortex so electrode placement positions are chosen so as to extract the maximum amount of information. In our experiment, we placed electrodes as shown in Fig. 2.</p>
 
-
 <img src="images/ten_20.jpg" width="500" height="400">
-<p>Figure 2<p>
+<p>Figure 2</p>
 
 <h4>B.Virtual Environment</h4>
 <p>Virtual objects that were meant for controlling are created with Unity. The subject is trained on a virtual environment where the display is 15.6 inch, monitor resolution of 1920 x 1080 p and 60Hz. Data of mind intent will be recorded where the subject will focus on moving the objects along axes. Shown in Fig. 3 is the virtual environment we created.</p>
@@ -74,16 +73,9 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 
 <p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig. 4.</p>
 
-<div class="row">
-  <div class="column" width=300px >
-    <img src="images/tables.png" alt="Accuracy tables" width=300 >
-  </div>
-  <div class="column" width=300px>
-    <img src="images/knn_cm.png" alt="KNN confusion matrix" width=300>
-    <p>figure 4</p>
-  </div>
-</div>
-
+<img src="images/tables.png" alt="Accuracy tables" width=300 >
+<img src="images/knn_cm.png" alt="KNN confusion matrix" width=300>
+<p>figure 4</p>
 
 ## Conclusion
 <p>Filters that were used in EEG signal processing causes a phase shift that makes the usage of wavelet features impossible. Therefore we have used the FFT feature extraction method to provide frequency bins as features for our classification methods. But by substituting those filters (Butterworth filter) with others (zero phase filters) the effect of the phase shift can be removed. We can explore the possibility of using a combination of features provided by WT and FFT to train a more accurate classification model. With all the classification models that were trained KNN algorithm with FFT algorithm would be the ideal choice of features and classification combination. We were able to obtain around 55% TPR value. By implementing statistical analysis we can rectify the anatomical localization effects on EEG data would further increase accuracy of these models. Deep learning methods proved to have a lot of potential when it comes to MI based research in recent history. Possibility of using deep learning approaches in non motor imagery
