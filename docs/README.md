@@ -74,8 +74,15 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 
 <p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig. 4.</p>
 
-<img src="images/knn_cm.png" width="300" height="300">
-<p>figure 4</p>
+<div class="row">
+  <div class="column">
+    <img src="images/tables.png" alt="Accuracy tables" style="width:300">
+  </div>
+  <div class="column">
+    <img src="images/knn_cm.png" alt="KNN confusion matrix" style="width:300">
+    <p>figure 4</p>
+  </div>
+</div>
 
 
 ## Conclusion
