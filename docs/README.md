@@ -131,7 +131,7 @@ intent with self phased brain computer interfaces is something that can be explo
 2. [Semester 7 slides](./pubs/semester_7_slides.pdf)
 3. [Semester 8 report](./)
 4. [Semester 8 slides](./pubs/semester_8_slides.pdf)
-5. Author 1, Author 2 and Author 3 "Research paper title" (2021). [PDF](./).
+5. Athapattu A.D., Dassanayake P.S.B. and Nanayakkara G.S.C. "Self Paced Brain Computer Interface On Sensoriomotor Rhythms For Virtual Objects Controlling" (2021). [PDF](./pubs/research_paper.pdf).
 
 
 ## Links
