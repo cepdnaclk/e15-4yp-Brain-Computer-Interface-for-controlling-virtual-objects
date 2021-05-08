@@ -122,7 +122,7 @@ Lab Streaming Layer is a system developed for synchronising streaming data for r
 <div>
   
  <div>
-<iframe width="100" height="auto" src="https://www.youtube.com/embed/mYRCd9_oo3Y" title="Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/mYRCd9_oo3Y" title="Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  <div>
 
 ## Conclusion
