@@ -120,6 +120,10 @@ Lab Streaming Layer is a system developed for synchronising streaming data for r
 <img src="images/knn_cm.png" alt="KNN confusion matrix" width=300>
 <p>figure 7</p>
 <div>
+  
+ <div>
+  [link text](https://www.youtube.com/watch?v=mYRCd9_oo3Y "Final demonstration")
+ <div>
 
 ## Conclusion
 
