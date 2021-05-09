@@ -49,8 +49,8 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 <p>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</p>
 
 1. The subject should know what are the activities that need to be done since it is important to induce brain waves related to those activities. Most of the research subjects practice to perform a minimum number of activities, for example in virtual object controlling, moving an object up and down, left and right.
-2. Subjects should train without feedback provided to acquire the required data as well as to analyze signal patterns Fig 1. 
-3. Preprocessing the data by artifact reduction(Electrooculogram(EOG), Electromyogram(EMG)) and signal filterings methods such as low-pass/high pass or bandpass filter 
+2. Subjects should train without feedback provided to acquire the required data as well as to analyze signal patterns Fig 1.
+3. Preprocessing the data by artifact reduction(Electrooculogram(EOG), Electromyogram(EMG)) and signal filterings methods such as low-pass/high pass or bandpass filter
 4. Feature extraction to find a suitable representation of the electrophysiology data that simplify the subsequent classification or detection of specific brain patterns.
 5. With the extracted features classifier being trained, the accuracy should be 70% or higher if not we have to recollect data and extract features and train a classifier model all over again.
 6. Training in real-time with the help of visual feedback Fig.2.
@@ -82,9 +82,9 @@ through LSL (Lab Streaming Layer) into a Python application where we extracted t
 <p>Figure 3</p>
 </div>
 
-<h5>B. OpenBCI GUI and LSL</h5> 
+<h5>B. OpenBCI GUI and LSL</h5>
 
-OpenBCI GUI (fig 4)<a href="https://openbci.com/index.php/downloads">here</a> is a powerful software that is used to visualize, record and stream data from OpenBCI boards. This GUI helps to visualize data coming from eight channels of Cyton board to understand if there are any faults in connections. If there are external disturbances that  interfere with the visualization of EEG signals it can be recognized as well. It also visualizes the real-time representations of FFT, power spectral distribution and time series.
+OpenBCI GUI (fig 4)<a href="https://openbci.com/index.php/downloads">here</a> is a powerful software that is used to visualize, record and stream data from OpenBCI boards. This GUI helps to visualize data coming from eight channels of Cyton board to understand if there are any faults in connections. If there are external disturbances that interfere with the visualization of EEG signals it can be recognized as well. It also visualizes the real-time representations of FFT, power spectral distribution and time series.
 
 <div>
 <img src="images/lsl_settings.png" width="600" height="300">
@@ -112,7 +112,9 @@ Lab Streaming Layer is a system developed for synchronising streaming data for r
 
 ## Results and Analysis
 
-<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig.7.</p>
+<p>Frequency bin components extracted by FFT and Detailed coefficients extracted by wavelet transform were used as features for the classification purpose. All the classifications have the ability to perform in real time. We used Random Forest, QDA, KNN, Catboost and SVM for classifying. In Table II we have compared the accuracies between different classification models. Table III gives the TPR of each class with respect to the model. The confusion matrix of the KNN model is shown in Fig.7.Best hyper
+parameters combination for each model is determined by a grid search using 10 fold cross validation as evaluation method. KNN model with features obtained with FFT showed the
+highest accuracy. Overall accuracies obtained when using FFT is higher than when using WT. Since we have data collected over 5 days we used a 5-fold cross validation to get an estimation of the consistency of accuracies. This is shown in figure 8</p>
 
 <img src="images/tables.png" alt="Accuracy tables" width=300 >
 
@@ -120,9 +122,15 @@ Lab Streaming Layer is a system developed for synchronising streaming data for r
 <img src="images/knn_cm.png" alt="KNN confusion matrix" width=300>
 <p>figure 7</p>
 <div>
+
+<div>
+<img src="images/5_fold.png" alt="KNN confusion matrix" width=300>
+<p>figure 8</p>
+<div>
   
+## Demo
  <div>
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/mYRCd9_oo3Y" title="Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="300px" src="https://www.youtube.com/embed/mYRCd9_oo3Y" title="Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  <div>
 
 ## Conclusion
@@ -131,16 +139,16 @@ Lab Streaming Layer is a system developed for synchronising streaming data for r
 intent with self phased brain computer interfaces is something that can be explored as well.</p>
 
 ## Publications
+
 1. [Semester 7 report](./)
 2. [Semester 7 slides](./pubs/semester_7_slides.pdf)
 3. [Semester 8 report](./pubs/final_report.pdf)
 4. [Semester 8 slides](./pubs/semester_8_slides.pdf)
 5. Athapattu A.D., Dassanayake P.S.B., and Nanayakkara G.S.C., "Self Paced Brain Computer Interface On Sensoriomotor Rhythms For Virtual Objects Controlling" (2021). [PDF](./pubs/research_paper.pdf).
 
-
 ## Links
 
-[//]: # ( NOTE: EDIT THIS LINKS WITH YOUR REPO DETAILS )
+[//]: # " NOTE: EDIT THIS LINKS WITH YOUR REPO DETAILS "
 
 - [Project Repository](https://github.com/cepdnaclk/e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects)
 - [Project Page](https://cepdnaclk.github.io/e15-4yp-Brain-Computer-Interface-for-controlling-virtual-objects)
