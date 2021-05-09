@@ -124,7 +124,7 @@ highest accuracy. Overall accuracies obtained when using FFT is higher than when
 <div>
 
 <div>
-<img src="images/5_fold.png" alt="KNN confusion matrix" width=300>
+<img src="images/5_fold.PNG" alt="KNN confusion matrix" width=300>
 <p>figure 8</p>
 <div>
   
