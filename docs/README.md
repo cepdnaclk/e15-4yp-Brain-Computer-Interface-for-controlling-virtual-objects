@@ -43,7 +43,7 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 ## Related works
 
 <p>Both non-motor imagery EEG signals related to virtual object manipulation and motor imagery EEG signals are sensorimotor rhythms(SMR). These are specific brain waves over the sensorimotor cortex that are generated after MI or ME. In research by Faradji et.al <a href="https://cdn.intechopen.com/pdfs/65241.pdf">research paper</a>, they explored the idea of rotation of a virtual object in 3D space in a more natural way. They used auto scalar auto-regressive methods for feature extraction and the classification was done with quadratic discriminant analysis. They obtained a true positive rate (TPR) value of 54.6% TPR and 0.01% FPR. Although there are numerous researches on using motor imagery to control virtual objects that give us higher accuracy [2], research done by Faradji et al. explores the possibility of controlling objects in a more natural way. It was stated that although the TPR is relatively low compared to MI related research, this method is more preferable in real-time applications since this method requires less computational power.</p>
-  
+
 ## Methodology
 
 <p>The procedure of self-paced BCI module for virtual object controlling consists of 8 steps</p>
@@ -127,7 +127,7 @@ highest accuracy. Overall accuracies obtained when using FFT is higher than when
 <img src="images/5_fold.PNG" alt="KNN confusion matrix" width=300>
 <p>figure 8</p>
 <div>
-  
+
 ## Demo
  <div>
 <iframe width="100%" height="300px" src="https://www.youtube.com/embed/mYRCd9_oo3Y" title="Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -140,11 +140,10 @@ intent with self phased brain computer interfaces is something that can be explo
 
 ## Publications
 
-1. [Semester 7 report](./)
-2. [Semester 7 slides](./pubs/semester_7_slides.pdf)
-3. [Semester 8 report](./pubs/final_report.pdf)
-4. [Semester 8 slides](./pubs/semester_8_slides.pdf)
-5. Athapattu A.D., Dassanayake P.S.B., and Nanayakkara G.S.C., "Self Paced Brain Computer Interface On Sensoriomotor Rhythms For Virtual Objects Controlling" (2021). [PDF](./pubs/research_paper.pdf).
+1. [Semester 7 slides](./pubs/semester_7_slides.pdf)
+2. [Semester 8 report](./pubs/final_report.pdf)
+3. [Semester 8 slides](./pubs/semester_8_slides.pdf)
+4. Athapattu A.D., Dassanayake P.S.B., and Nanayakkara G.S.C., "Self Paced Brain Computer Interface On Sensoriomotor Rhythms For Virtual Objects Controlling" (2021). [PDF](./pubs/research_paper.pdf).
 
 ## Links
 
