@@ -9,7 +9,7 @@ title: Brain Computer Interface for controlling virtual objects using self-paced
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Project Title
+# Brain Computer Interface for controlling virtual objects using self-paced mind intent
 
 #### Team
 
